@@ -6,6 +6,15 @@ let about = "I'm Aman Kumar, I go by Krishna online.
 I am a Computer Science student at Kurukshetra University from India. I have been enjoying programming for about 5 years, mostly as a Web developer and messing around with GNU/Linux."
 let work = "I am a Full-stack Web Developer by profession and I work on CLI tools in my free time. Ever since I started using a computer, I've always been fascinated with technology and wanted to learn about it as much as I could. I always use and promote Free/Libre Open Source software."
 
+module NavLink = {
+  type t = {title: string, path: string}
+  let all: array<t> = [
+    {path: "/", title: "Home"},
+    {path: "/stack", title: "Tech stack"},
+    {path: "/projects", title: "Projects"},
+  ]
+}
+
 module Liked = {
   type t = {title: string}
   let things: array<t> = [

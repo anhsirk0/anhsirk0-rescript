@@ -140,3 +140,7 @@ module Dynamic = {
   @module("next/dynamic")
   external dynamic: (unit => promise<'a>, options) => 'a = "default"
 }
+
+module Navigation = {
+  @module("next/navigation") external usePathname: unit => string = "usePathname"
+}

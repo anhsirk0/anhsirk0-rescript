@@ -1,6 +1,15 @@
 @react.component
 let make = (~children) => {
   let pos = `-right-80 group-has-[#theme-btn:focus]:right-0 group-has-[#theme-container>*:focus]:right-0`
+  let pathname = Next.Navigation.usePathname()
+  let links = Info.NavLink.all->Array.map(item => {
+    let active = item.path == pathname ? "font-bold" : ""
+    <div
+      key=item.path
+      className={`h-full px-2 md:px-4 xxl:px-8 center border-l-2 border-black ${active}`}>
+      {item.title->React.string}
+    </div>
+  })
 
   <main
     className="center h-screen min-h-0 w-screen transitional bg-base-100 flex-col relative group">
@@ -18,15 +27,7 @@ let make = (~children) => {
         {Info.title->React.string}
       </p>
       <div className="grow" />
-      <div className="h-full px-2 md:px-4 xxl:px-8 center font-medium border-l-2 border-black">
-        {"Home"->React.string}
-      </div>
-      <div className="h-full px-2 md:px-4 xxl:px-8 center font-medium border-l-2 border-black">
-        {"Tech stack"->React.string}
-      </div>
-      <div className="h-full px-2 md:px-4 xxl:px-8 center font-medium border-l-2 border-black">
-        {"Projects"->React.string}
-      </div>
+      {React.array(links)}
       <button
         ariaLabel="select-theme-btn"
         id="theme-btn"
