@@ -51,10 +51,6 @@
   }
 }
 
-#root {
-  @apply center h-screen min-h-0 w-screen transitional bg-base-100 flex-col relative;
-}
-
 .center {
   @apply flex items-center justify-center;
 }
@@ -63,20 +59,8 @@
   @apply transition-all duration-300 ease-out;
 }
 
-.resp-text-sm {
-  @apply text-xs md:text-sm xxl:text-base;
-}
-
 .resp-text {
   @apply text-sm md:text-base xxl:text-xl;
-}
-
-.resp-text-lg {
-  @apply text-base md:text-lg xxl:text-2xl;
-}
-
-.resp-title {
-  @apply text-base xl:text-xl;
 }
 
 .resp-btn {
@@ -91,14 +75,3 @@
   @apply gap-2 xxl:gap-4;
 }
 
-.text-40 {
-  @apply text-base-content/40;
-}
-
-.text-60 {
-  @apply text-base-content/60;
-}
-
-.text-80 {
-  @apply text-base-content/80;
-}

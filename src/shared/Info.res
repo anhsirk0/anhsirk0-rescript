@@ -29,22 +29,22 @@ module Contact = {
     {
       title: "Mail",
       link: "mailto:krishna404@yandex.com",
-      icon: <Icon.mail className="resp-icon" />,
+      icon: <Icon.mail className="text-2xl" />,
     },
     {
       title: "LinkedIn",
       link: "https://linkedin.com/in/anhsirk0",
-      icon: <Icon.linkedin className="resp-icon" />,
+      icon: <Icon.linkedin className="text-2xl" />,
     },
     {
       title: "Codeberg",
       link: "https://codeberg.org/anhsirk0",
-      icon: <Icon.codeberg className="resp-icon" />,
+      icon: <Icon.codeberg className="text-2xl" />,
     },
     {
       title: "Github",
       link: "https://github.com/anhsirk0",
-      icon: <Icon.github className="resp-icon" />,
+      icon: <Icon.github className="text-2xl" />,
     },
   ]
 }

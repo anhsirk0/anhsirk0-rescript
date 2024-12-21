@@ -50,6 +50,6 @@ export default {
   plugins: [daisyui],
   daisyui: {
     themes,
-    darkTheme: "forest",
+    darkTheme: "coffee",
   },
 };
