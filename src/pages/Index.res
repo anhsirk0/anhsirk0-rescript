@@ -5,6 +5,7 @@ let default = () => {
   <div className="flex flex-col lg:flex-row size-full">
     <Next.Head>
       <title> {React.string("Home • " ++ Info.title)} </title>
+      <link rel="icon" href="/static/favicon.png" />
     </Next.Head>
     <div className="center flex-col w-full min-h-[40vh] lg:w-1/2 bg-accent text-accent-content">
       <p
