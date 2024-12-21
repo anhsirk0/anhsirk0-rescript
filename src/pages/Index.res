@@ -4,7 +4,7 @@ let default = () => {
 
   <div className="flex flex-col lg:flex-row size-full">
     <Next.Head>
-      <title> {Info.title->React.string} </title>
+      <title> {React.string("Home • " ++ Info.title)} </title>
     </Next.Head>
     <div className="center flex-col w-full min-h-[40vh] lg:w-1/2 bg-accent text-accent-content">
       <p
@@ -24,7 +24,7 @@ let default = () => {
       <Box title="About me" className="border-b-2 border-black">
         <p className="text-base xxl:text-xl"> {Info.about->React.string} </p>
         <button className="btn btn-primary resp-btn w-fit mt-4 xxl:mt-8">
-          {"Download CV"->React.string}
+          {"Download Resume"->React.string}
           <Icon.download className="resp-icon" />
         </button>
       </Box>

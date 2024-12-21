@@ -4,10 +4,6 @@
 
 @layer base {
   @font-face {
-    font-family: "Lora";
-    src: local("Lora"), url("fonts/Lora/Lora-Variable.ttf");
-  }
-  @font-face {
     font-family: "Work";
     src: local("Work"), url("fonts/Work/Work-Variable.ttf");
   }
