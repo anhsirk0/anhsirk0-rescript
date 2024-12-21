@@ -1,0 +1,35 @@
+{
+  "name": "anhsirk0",
+  "version": "0.0.0",
+  "author": "Patrick Ecker <ryyppy@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
+    "@rescript/core": "^1.6.1",
+    "@rescript/react": "^0.12.1",
+    "daisyui": "^4.12.22",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rescript": "^11.1.4"
+  },
+  "repository": "https://github.com/rescript-lang/create-rescript-app",
+  "scripts": {
+    "dev": "next",
+    "debug": "NODE_OPTIONS='--inspect' next",
+    "build": "rescript && next build",
+    "now-build": "rescript && next build",
+    "export": "next export",
+    "start": "next start -p $PORT",
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.1.0",
+    "cssnano": "^6.0.1",
+    "gentype": "4.1",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
+  }
+}
