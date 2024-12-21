@@ -24,7 +24,7 @@ let default = () => {
       className="center flex-col w-full h-full lg:w-1/2 xxl:border-l-2 xxl:border-black bg-secondary text-secondary-content">
       <Box title="About me" className="border-b-2 border-black">
         <p className="text-base xxl:text-xl"> {Info.about->React.string} </p>
-        <button className="btn btn-primary resp-btn w-fit mt-4 xxl:mt-8">
+        <button className="btn btn-primary xxl:btn-lg resp-btn w-fit mt-4 xxl:mt-8">
           {"Download Resume"->React.string}
           <Icon.download className="resp-icon" />
         </button>
