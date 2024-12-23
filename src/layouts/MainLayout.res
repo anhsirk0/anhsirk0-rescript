@@ -1,18 +1,23 @@
 @react.component
 let make = (~children) => {
-  let pos = `-right-80 group-has-[#theme-btn:focus]:right-0 group-has-[#theme-container>*:focus]:right-0`
+  let pos = `-right-80 group-has-[#theme-btn:focus]/main:right-0 group-has-[#theme-container>*:focus]/main:right-0`
   let pathname = Next.Navigation.usePathname()
   let links = Info.NavLink.all->Array.map(item => {
-    let active = item.path == pathname ? "font-bold" : ""
-    <div
+    <Next.Link
+      href=item.path
       key=item.path
-      className={`h-full px-2 md:px-4 xxl:px-8 center border-l-2 border-black ${active}`}>
+      className={`h-full px-2 md:px-4 xxl:px-8 center border-l-2 border-black relative`}>
       {item.title->React.string}
-    </div>
+      {item.path == pathname
+        ? <Icon.sparkle
+            className="size-5 absolute top-0 left-1 xxl:top-2 xxl:left-2 animate-grow"
+          />
+        : React.null}
+    </Next.Link>
   })
 
   <main
-    className="center h-screen min-h-0 w-screen transitional bg-base-100 flex-col relative group">
+    className="center h-screen min-h-0 w-screen transitional bg-base-100 flex-col relative group/main">
     <div className={`fixed top-0 ${pos} z-20 h-full flex flex-row transitional`}>
       <ThemeList />
     </div>

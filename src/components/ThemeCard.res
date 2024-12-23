@@ -20,13 +20,9 @@ module MyOverrides = {
 @@jsxConfig({module_: "MyOverrides", mode: "automatic"})
 
 @react.component
-let make = (~theme, ~isActive, ~onChange, ~children) => {
+let make = (~theme, ~onChange, ~children) => {
   let onClick = _ => theme->onChange
   <li className="btn w-full justify-between relative" onClick tabIndex=0 dataTheme=theme>
-    {theme->React.string}
     {children}
-    {isActive
-      ? <Icon.sparkle className="size-5 absolute top-0.5 left-0.5 animate-grow" />
-      : React.null}
   </li>
 }

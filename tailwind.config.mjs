@@ -40,11 +40,16 @@ export default {
         "0%": { opacity: 0 },
         "100%": { opacity: 1 },
       },
+      slide: {
+        "0%": { transform: "translateX(400px)" },
+        "100%": { transform: "translateX(0px)" },
+      },
     },
     animation: {
       wave: "wave 2s ease-in-out 0s infinite",
       grow: "grow 300ms ease-in-out",
       fade: "fade 200ms ease-in-out",
+      slide: "slide 300ms ease-in-out forwards",
     },
   },
   plugins: [daisyui],
