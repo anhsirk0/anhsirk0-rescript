@@ -8,8 +8,7 @@ let default = () => {
     <Next.Head>
       <title> {React.string("Tech Stack • " ++ Info.title)} </title>
     </Next.Head>
-    <div
-      className="center flex-col w-full min-h-[36vh] lg:w-1/2 bg-secondary/50 text-secondary-content flex-1">
+    <div className="center flex-col w-full lg:w-1/2 bg-secondary/50 text-secondary-content flex-1">
       <Box title="Languages" className="border-b-2 border-black bg-primary/40 gap-4">
         <div className="flex flex-row gap-4 xxl:gap-6 flex-wrap"> {React.array(langs)} </div>
       </Box>
