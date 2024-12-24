@@ -9,6 +9,7 @@ type t = React.component<props>
 @module("@phosphor-icons/react") external github: t = "GithubLogo"
 @module("@phosphor-icons/react") external diamond: t = "Diamond"
 @module("@phosphor-icons/react") external download: t = "DownloadSimple"
+@module("@phosphor-icons/react") external arrowSquareOut: t = "ArrowSquareOut"
 
 let emacs: t = props => {
   <svg

@@ -20,5 +20,10 @@ type props = {
 let default = (props: props): React.element => {
   let {component, pageProps} = props
   let content = React.createElement(component, pageProps)
-  <MainLayout> content </MainLayout>
+  <MainLayout>
+    <Next.Head>
+      <link rel="icon" href="/static/favicon.png" />
+    </Next.Head>
+    content
+  </MainLayout>
 }
