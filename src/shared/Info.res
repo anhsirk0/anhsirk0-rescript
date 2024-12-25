@@ -69,7 +69,7 @@ module Tech = {
     {
       title: "Javascript",
       link: "https://ecma-international.org/publications-and-standards/standards/ecma-262",
-      image: "js.png",
+      image: "javascript.png",
     },
     // { title: "R", image: "r.png", link: "https://r-project.org/" },
     {title: "Rust", link: "https://rust-lang.org", image: "rust.png"},
@@ -184,7 +184,7 @@ module Project = {
     {
       title: "Slider-login-signup",
       about: "Login/Signup design with a slider animation made with tailwindcss and nextjs.",
-      lang: "js.png",
+      lang: "javascript.png",
       codeberg: "https://codeberg.org/anhsirk0/slider-login-signup",
       link: "https://anhsirk0-ts-projects.netlify.com/slider",
     },
