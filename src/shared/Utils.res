@@ -1,6 +1,6 @@
-@send external focus: Dom.element => unit = "focus"
-@send external click: Dom.element => unit = "click"
-@send external blur: Dom.element => unit = "blur"
+// @send external focus: Dom.element => unit = "focus"
+// @send external click: Dom.element => unit = "click"
+// @send external blur: Dom.element => unit = "blur"
 @send external setAttribute: (Dom.element, string, string) => unit = "setAttribute"
 
 let querySelectAndThen = (selector, action) => {
@@ -27,7 +27,7 @@ let setTheme = theme => {
 }
 
 let randomNeutral = () => {
-  let num = 9 * Math.Int.random(1, 4)
+  let num = 10 * Math.Int.random(5, 9)
   let opac = Float.toString(num->Int.toFloat /. 100.0)
   `oklch(var(--n)/${opac})`
 }
@@ -35,7 +35,7 @@ let randomNeutral = () => {
 let randomColor = () => {
   let vars = ["--a", "--p", "--s"]
   let var = vars->Array.get(Math.Int.random(0, 3))->Option.getOr("--p")
-  let num = 10 * Math.Int.random(2, 8)
+  let num = 10 * Math.Int.random(2, 7)
   // let num = (isDarkMode() ? Math.Int.random(1, 5) : Math.Int.random(2, 7)) * 10
   let opac = Float.toString(num->Int.toFloat /. 100.0)
   `oklch(var(${var})/${opac})`

@@ -2,7 +2,7 @@ module ProjectItem = {
   @react.component
   let make = (~item: Info.Project.t) => {
     <div
-      className="col-span-12 md:col-span-6 lg:col-span-3 rounded-box text-primary-content"
+      className="col-span-12 md:col-span-6 lg:col-span-3 rounded-box text-base-content"
       style={{backgroundColor: Utils.randomColor()}}>
       <div
         className="brutal-box p-4 h-full flex flex-col gap-2 xxl:gap-4 relative"
