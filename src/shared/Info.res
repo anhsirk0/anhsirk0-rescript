@@ -306,12 +306,12 @@ module Project = {
       lang: "python.png",
       codeberg: "https://codeberg.org/anhsirk0/cellular-automata",
     },
-    {
-      title: "News-cli",
-      about: "News and article viewing utility using New-York times API.",
-      lang: "rust.png",
-      codeberg: "https://codeberg.org/anhsirk0/news-cli",
-    },
+    // {
+    //   title: "News-cli",
+    //   about: "News and article viewing utility using New-York times API.",
+    //   lang: "rust.png",
+    //   codeberg: "https://codeberg.org/anhsirk0/news-cli",
+    // },
     {
       title: "Solus-awesome",
       about: "Simple bash script to build & install awesomewm on Solus Linux.",

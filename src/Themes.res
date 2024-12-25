@@ -29,7 +29,4 @@ let themes = [
   "night",
   "coffee",
   "winter",
-  "dim",
-  "nord",
-  "sunset",
 ]

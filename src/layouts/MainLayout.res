@@ -6,7 +6,7 @@ let make = (~children) => {
     <Next.Link
       href=item.path
       key=item.path
-      className={`h-full px-2 md:px-4 xxl:px-8 center border-l-2 border-black relative`}>
+      className="text-sm md:text-base h-full px-2 md:px-4 xxl:px-8 center border-l-2 border-black relative">
       {item.title->React.string}
       {item.path == pathname
         ? <Icon.sparkle
@@ -28,15 +28,17 @@ let make = (~children) => {
       //     <img alt="logo" src={"/static/" ++ Info.logo} />
       //   </div>
       // </div>
-      <p className="text-2xl lg:text-3xl xxl:text-5xl font-black pl-4 xxl:pl-6">
+      <Next.Link
+        href="/"
+        className="text-xl md:text-2xl lg:text-3xl xxl:text-5xl font-black pl-2 md:pl-4 xxl:pl-6">
         {Info.title->React.string}
-      </p>
+      </Next.Link>
       <div className="grow" />
       {React.array(links)}
       <button
         ariaLabel="select-theme-btn"
         id="theme-btn"
-        className="h-full w-12 xxl:w-16 center bg-primary text-primary-content border-l-2 border-black">
+        className="h-full w-8 md:w-12 xxl:w-16 center bg-primary text-primary-content border-l-2 border-black">
         <Icon.palette className="resp-icon stroke-2" />
       </button>
     </div>

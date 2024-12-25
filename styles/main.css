@@ -26,12 +26,8 @@
     box-shadow: 4px 4px 0 0 black;
   }
 
-  .brutal-input-raised {
-    @apply focus:-translate-x-1 focus:-translate-y-1 focus:brutal-shadow focus:outline-none focus:border-2 focus:border-base-content focus:ring-0;
-  }
-
   .btn {
-    @apply border-2 border-black transition no-animation -translate-x-1 -translate-y-1 brutal-shadow;
+    @apply border-2 border-black transition no-animation -translate-x-1 -translate-y-1 brutal-shadow normal-case;
   }
 
   .btn:hover {
@@ -40,14 +36,6 @@
 
   .btn:active {
     @apply translate-x-0 translate-y-0 shadow-none;
-  }
-
-  .brutal-input {
-    @apply p-4 brutal-box focus:brutal-input-raised;
-  }
-
-  .brutal-link {
-    @apply relative after:absolute after:bg-base-content after:bottom-0 after:left-0 after:h-[1px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-200;
   }
 }
 
@@ -63,10 +51,6 @@
   @apply text-sm md:text-base xxl:text-xl;
 }
 
-.resp-btn {
-  @apply btn-xs md:btn-sm xxl:btn-md;
-}
-
 .resp-icon {
   @apply size-4 lg:size-6 xxl:size-6;
 }
@@ -74,4 +58,3 @@
 .resp-gap {
   @apply gap-2 xxl:gap-4;
 }
-

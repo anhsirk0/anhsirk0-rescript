@@ -26,7 +26,7 @@ let default = () => {
         <a
           href="/static/resume.pdf"
           download={Info.name->String.replace(" ", "_") ++ "_Resume"}
-          className="btn btn-primary xxl:btn-lg resp-btn w-fit mt-4 xxl:mt-8">
+          className="btn btn-primary xxl:btn-lg w-fit mt-4 xxl:mt-8">
           {"Download Resume"->React.string}
           <Icon.download className="resp-icon" />
         </a>

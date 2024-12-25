@@ -29,7 +29,8 @@ let setTheme = theme => {
 let randomNeutral = () => {
   let num = 10 * Math.Int.random(5, 9)
   let opac = Float.toString(num->Int.toFloat /. 100.0)
-  `oklch(var(--n)/${opac})`
+  // `oklch(var(--n)/${opac})` // daisyUI v4
+  `hsl(var(--n)/${opac})` // daisyUI v3
 }
 
 let randomColor = () => {
@@ -38,7 +39,8 @@ let randomColor = () => {
   let num = 10 * Math.Int.random(2, 7)
   // let num = (isDarkMode() ? Math.Int.random(1, 5) : Math.Int.random(2, 7)) * 10
   let opac = Float.toString(num->Int.toFloat /. 100.0)
-  `oklch(var(${var})/${opac})`
+  // `oklch(var(${var})/${opac})` // daisyUI v4
+  `hsl(var(${var})/${opac})` // daisyUI v3
 }
 
 let basename = str => {
