@@ -327,8 +327,8 @@ module Project = {
     {
       title: "This website",
       about: "Source code for this website. (anhsirk0.codeberg.page)",
-      lang: "sveltekit.png",
-      codeberg: "https://codeberg.org/anhsirk0/anhsirk0-sveltekit",
+      lang: "rescript.png",
+      codeberg: "https://codeberg.org/anhsirk0/anhsirk0-rescript",
     },
   ]
 }
