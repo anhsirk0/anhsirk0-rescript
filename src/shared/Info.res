@@ -202,12 +202,12 @@ module Project = {
       codeberg: "https://codeberg.org/anhsirk0/tendrils-backend",
       github: "https://github.com/anhsirk0/tendrils-backend",
     },
-    {
-      title: "Infinite-scroll",
-      about: "Generic React component for Infinite scrolling (react + typescript)",
-      lang: "typescript.png",
-      codeberg: "https://codeberg.org/anhsirk0/infinite-scroll",
-    },
+    // {
+    //   title: "Infinite-scroll",
+    //   about: "Generic React component for Infinite scrolling (react + typescript)",
+    //   lang: "typescript.png",
+    //   codeberg: "https://codeberg.org/anhsirk0/infinite-scroll",
+    // },
     {
       title: "TS-projects",
       about: "Some Typescript projects as NextJs pages.",
