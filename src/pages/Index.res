@@ -23,10 +23,13 @@ let default = () => {
       className="flex flex-col w-full h-full lg:w-1/2 border-t-2 lg:border-l-2 lg:border-t-0 bg-secondary text-secondary-content border-black">
       <Box title="About me" className="border-b-2 border-black">
         <p className="text-base xxl:text-xl"> {Info.about->React.string} </p>
-        <button className="btn btn-primary xxl:btn-lg resp-btn w-fit mt-4 xxl:mt-8">
+        <a
+          href="/static/resume.pdf"
+          download={Info.name->String.replace(" ", "_") ++ "_Resume"}
+          className="btn btn-primary xxl:btn-lg resp-btn w-fit mt-4 xxl:mt-8">
           {"Download Resume"->React.string}
           <Icon.download className="resp-icon" />
-        </button>
+        </a>
       </Box>
       <Box title="What I do" className="border-b-2 border-black">
         <p className="xxl:text-xl"> {Info.work->React.string} </p>
