@@ -238,7 +238,7 @@ module Project = {
     {
       title: "Notes-nestjs",
       about: "Nestjs backend for simple notes management system.",
-      lang: "typescript.png",
+      lang: "nestjs.png",
       codeberg: "https://codeberg.org/anhsirk0/notes-nestjs",
     },
     {
