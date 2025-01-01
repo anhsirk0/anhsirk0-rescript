@@ -1,5 +1,5 @@
 let default = () => {
-  let likedThings = Info.Liked.things->Array.map(item => <LikedItem item key=item.title />)
+  let liked = Info.Liked.all->Array.map(item => <LikedItem item key=item.title />)
   let contacts = Info.Contact.all->Array.map(item => <ContactItem item key=item.title />)
 
   <div className="flex flex-col lg:flex-row size-full">
@@ -35,7 +35,7 @@ let default = () => {
         <p className="xxl:text-xl"> {Info.work->React.string} </p>
       </Box>
       <Box title="Things I enjoy" className="border-b-2 border-black">
-        <div className="flex gap-2 xxl:gap-4 flex-wrap mt-1"> {React.array(likedThings)} </div>
+        <div className="flex gap-2 xxl:gap-4 flex-wrap mt-1"> {React.array(liked)} </div>
       </Box>
       <Box title="Contact">
         <div className="flex gap-4 xxl:gap-8 mt-1"> {React.array(contacts)} </div>

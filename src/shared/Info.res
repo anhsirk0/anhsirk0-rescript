@@ -18,7 +18,7 @@ module NavLink = {
 
 module Liked = {
   type t = {title: string}
-  let things: array<t> = [
+  let all: array<t> = [
     {title: "Linux"},
     {title: "Emacs / Text Editors"},
     {title: "Terminal Emulators"},
@@ -29,12 +29,7 @@ module Liked = {
 }
 
 module Contact = {
-  type t = {
-    title: string,
-    link: string,
-    icon: string => React.element,
-  }
-
+  type t = {title: string, link: string, icon: string => React.element}
   let all: array<t> = [
     {
       title: "Mail",
@@ -202,12 +197,6 @@ module Project = {
       codeberg: "https://codeberg.org/anhsirk0/tendrils-backend",
       github: "https://github.com/anhsirk0/tendrils-backend",
     },
-    // {
-    //   title: "Infinite-scroll",
-    //   about: "Generic React component for Infinite scrolling (react + typescript)",
-    //   lang: "typescript.png",
-    //   codeberg: "https://codeberg.org/anhsirk0/infinite-scroll",
-    // },
     {
       title: "TS-projects",
       about: "Some Typescript projects as NextJs pages.",
@@ -306,24 +295,12 @@ module Project = {
       lang: "python.png",
       codeberg: "https://codeberg.org/anhsirk0/cellular-automata",
     },
-    // {
-    //   title: "News-cli",
-    //   about: "News and article viewing utility using New-York times API.",
-    //   lang: "rust.png",
-    //   codeberg: "https://codeberg.org/anhsirk0/news-cli",
-    // },
     {
       title: "Solus-awesome",
       about: "Simple bash script to build & install awesomewm on Solus Linux.",
       lang: "bash.png",
       codeberg: "https://codeberg.org/anhsirk0/solus-awesome",
     },
-    // {
-    //   title: "Quote-uploader",
-    //   about: "Create slideshow of images from brainyquote and upload to dailymotion.",
-    //   lang: "bash.png",
-    //   codeberg: "https://codeberg.org/anhsirk0/quote-uploader",
-    // },
     {
       title: "This website",
       about: "Source code for this website. (anhsirk0.codeberg.page)",
