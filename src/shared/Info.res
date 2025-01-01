@@ -329,6 +329,7 @@ module Project = {
       about: "Source code for this website. (anhsirk0.codeberg.page)",
       lang: "rescript.png",
       codeberg: "https://codeberg.org/anhsirk0/anhsirk0-rescript",
+      github: "https://github.com/anhsirk0/anhsirk0-rescript",
     },
   ]
 }
