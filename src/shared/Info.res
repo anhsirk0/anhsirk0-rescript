@@ -142,9 +142,9 @@ module Project = {
     {
       title: "Landslides",
       about: "Collection of Landing pages redesigned using DaisyUI",
-      lang: "react.png",
+      lang: "rescript.png",
       link: "https://landslides.netlify.app",
-      // codeberg: "https://codeberg.org/anhsirk0/landslides",
+      codeberg: "https://codeberg.org/anhsirk0/landslides",
       github: "https://github.com/anhsirk0/landslides",
     },
     {
