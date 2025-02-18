@@ -43,7 +43,7 @@ let randomColor = () => {
   `hsl(var(${var})/${opac})` // daisyUI v3
 }
 
-let basename = str => {
-  let s = str->String.charAt(0)->String.toUpperCase ++ str->String.sliceToEnd(~start=1)
-  s->String.split(".")->Array.get(0)->Option.getOr(str)
-}
+// let basename = str => {
+//   let s = str->String.charAt(0)->String.toUpperCase ++ str->String.sliceToEnd(~start=1)
+//   s->String.split(".")->Array.get(0)->Option.getOr(str)
+// }

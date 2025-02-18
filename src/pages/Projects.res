@@ -11,11 +11,11 @@ module ProjectItem = {
         <p className="text-xl lg:text-2xl xxl:text-3xl font-bold -mt-2">
           {item.title->React.string}
         </p>
-        <div className="flex flex-row gap-2 items-end">
+        <div className="flex flex-row gap-2 items-center">
           <div className="brutal-box overflow-hidden size-6 xxl:size-8">
-            <img className="w-full" alt=item.title src={`/static/${item.lang}`} />
+            <img className="w-full" alt=item.title src=item.langImage />
           </div>
-          <p className="xxl:text-lg"> {item.lang->Utils.basename->React.string} </p>
+          <p className="xxl:text-lg"> {item.langName->React.string} </p>
         </div>
         <p className="lg:text-lg xxl:text-xl"> {item.about->React.string} </p>
         <div className="grow" />
