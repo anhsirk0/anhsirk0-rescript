@@ -3,7 +3,7 @@ let make = (~item: Info.Tech.t) => {
   <a
     href={item.link}
     target="_blank"
-    className="btn btn-square rounded-box size-20 md:size-24 xxl:size-36 overflow-hidden p-0 relative group">
+    className="btn btn-square rounded-box size-20 xl:size-28 xxl:size-36 overflow-hidden p-0 relative group">
     // <img className="w-full" alt=item.title src={`/static/${item.image}`} />
     <img className="w-full" alt=item.title src={item.image} />
     <p

@@ -58,3 +58,7 @@
 .resp-gap {
   @apply gap-2 xxl:gap-4;
 }
+
+.resp-btn {
+  @apply btn-sm xl:btn-md xxl:btn-lg
+}
