@@ -22,7 +22,9 @@ let default = () => {
     <div
       className="flex flex-col w-full h-full lg:w-1/2 border-t-2 lg:border-l-2 lg:border-t-0 bg-secondary text-secondary-content border-black">
       <Box title="About me" className="border-b-2 border-black">
-        <p className="text-base xxl:text-xl"> {Info.about->React.string} </p>
+        <pre className="text-base xxl:text-xl text-wrap font-sans">
+          {Info.about->React.string}
+        </pre>
         <a
           href="/static/resume.pdf"
           download={Info.name->String.replace(" ", "_") ++ "_Resume"}
@@ -31,9 +33,9 @@ let default = () => {
           <Icon.download className="resp-icon" />
         </a>
       </Box>
-      <Box title="What I do" className="border-b-2 border-black">
-        <p className="xxl:text-xl"> {Info.work->React.string} </p>
-      </Box>
+      // <Box title="What I do" className="border-b-2 border-black">
+      //   <p className="xxl:text-xl"> {Info.work->React.string} </p>
+      // </Box>
       <Box title="Things I enjoy" className="border-b-2 border-black">
         <div className="flex gap-2 xxl:gap-4 flex-wrap mt-1"> {React.array(liked)} </div>
       </Box>

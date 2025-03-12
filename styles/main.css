@@ -60,5 +60,5 @@
 }
 
 .resp-btn {
-  @apply btn-sm xl:btn-md xxl:btn-lg
+  @apply btn-sm lg:btn-md xl:btn-lg xxl:btn-lg
 }
